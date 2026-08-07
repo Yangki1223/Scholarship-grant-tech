@@ -1,0 +1,16 @@
+{
+  "name": "grantmatch-nz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GrantMatch NZ — run both backend and frontend with two commands",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,magenta \"npm run dev -w backend\" \"npm run dev -w frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

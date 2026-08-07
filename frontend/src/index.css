@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #122536;
+  background: #ffffff;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Fraunces", serif;
+}
+
+.fern-divider {
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #3fa9da 0%, #3fa9da 40%, #d93a3a 60%, #d93a3a 100%);
+}
+
+.card {
+  background: #ffffff;
+  border: 1.5px solid #d8e9f2;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.badge-match { background: #e7f6ec; color: #1d8348; }
+.badge-close { background: #fdf1e3; color: #b4690e; }
+.badge-no { background: #fce9e9; color: #b32828; }
+.badge-draft { background: #eaf6fd; color: #1c7fb5; }
+
+.cite {
+  display: inline-block;
+  font-size: 11px;
+  font-family: "JetBrains Mono", monospace;
+  background: white;
+  border: 1px solid #3fa9da;
+  color: #1c7fb5;
+  padding: 1px 6px;
+  border-radius: 6px;
+  margin: 0 2px;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #d8e9f2; border-radius: 4px; }
